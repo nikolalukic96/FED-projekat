@@ -148,9 +148,9 @@ div.gallery:hover {
   opacity: 1;
   border: none;
   cursor: pointer;
-  box-shadow: 5px 5px 5px #333;
-  transition-delay: 0.1s;
-  transition-duration: 0.8s;
+  box-shadow: 7px 7px 7px #333;
+  transition-delay: 0.05s;
+  transition-duration: 0.8s ;
 }
 
 div.gallery img {
