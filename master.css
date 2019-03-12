@@ -51,9 +51,6 @@ header div {
   font-weight: 400;
 }
 
-#nav li {
-  margin: 0 20px;
-}
 #nav li:hover {
   background: #243665;
   border-radius: 8px;
@@ -62,6 +59,20 @@ header div {
 #nav a:hover {
   color: #fff;
   font-weight: 600;
+}
+
+.navbar-toggler-icon li{
+  color: #fff!important;
+}
+
+.navbar-toggler li{
+  color:#fff!important;
+}
+
+@media only screen and (max-width: 980px;) {
+  #nav li {
+    text-align: center!important;
+  }
 }
 
 /* footer */
@@ -77,6 +88,10 @@ header div {
 
 .page-footer a {
   font-size: 0.9rem;
+}
+
+.page-footer li {
+  line-height: 1.2;
 }
 
 .page-footer a:hover {
@@ -149,8 +164,8 @@ div.gallery:hover {
   border: none;
   cursor: pointer;
   box-shadow: 7px 7px 7px #333;
-  transition-delay: 0.05s;
-  transition-duration: 0.8s ;
+  transition-delay: 0.03s;
+  transition-duration: 0.5s ;
 }
 
 div.gallery img {
@@ -187,5 +202,30 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+/* TEST PAGE */
+
+
+/* LINKS PAGE */
+
+
+/* ABOUT US PAGE */
+
+
+/* CONTACT PAGE */
+
+.form-group  input,textarea{
+  margin-bottom: 30px;
+}
+
+.form-group input::placeholder {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.form-group textarea::placeholder {
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
