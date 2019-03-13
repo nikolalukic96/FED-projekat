@@ -5,7 +5,6 @@
 * {
   color: #555;
   font-family: "Nunito";
-  color:#fff;
   box-sizing: border-box;
   font-size: 1.1rem;
   font-weight: 300;
@@ -15,10 +14,6 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Montserrat";
 }
 
-body {
-  background: linear-gradient(to right,#243665,#8BD8BD);
-}
-
 /* TEMA (header,footer) */
 
 /* header */
@@ -26,6 +21,10 @@ body {
 .bg {
   background: linear-gradient(to right,#243665,#8BD8BD);
   padding: 10px 0;
+}
+
+header {
+  margin-top: 65px;
 }
 
 header h1 {
@@ -41,19 +40,13 @@ header div {
 }
 
 #nav {
-  background: #ccc;
-  border-radius: 50px;
+  background: linear-gradient(to right,#243665,#8BD8BD);
   padding: 10px;
 }
 
 #nav a {
-  color: #243665;
+  color: #fff;
   font-weight: 400;
-}
-
-#nav li:hover {
-  background: #243665;
-  border-radius: 8px;
 }
 
 #nav a:hover {
@@ -144,9 +137,37 @@ header div {
 
 /* HOME PAGE */
 
-h3 {
-  font-size: 2rem;
-  letter-spacing: 1.5px;
+#home {
+  background: url(img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5)!important;
+  border-radius: 5px;
+}
+
+.pt {
+  padding-top: 80px;
+}
+
+#home h3,p {
+  color: #fff;
+}
+
+#bg-trans {
+  background: rgba(0,0,0,0.8)!important;
+  padding: 50px 0;
+  border-radius: 5px;
+  color:#000;
+}
+
+.welcome h3 {
+  font-size: 3rem;
 }
 
 .blockquote-footer {
