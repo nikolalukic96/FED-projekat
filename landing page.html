@@ -13,28 +13,36 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="container-fluid" id="land">
-        <div id="free" class="pt-3 mb-4">
-          Freetanica
+    <div class="container-fluid">
+      <div class="row" id="land">
+        <div class="col-12">
+            <div class="pt-3 mb-3 text-center">
+                <img src="img/logo.png" alt="logo" id="logo_land">
+              </div>
+              <div class="text-center">
+                <h1 class="text-uppercase text-white mb-2">Start Learning English</h1>
+                <h2 class="font-weight-light text-white">Certificate Your Knowledge For Free</h2>
+                <button type="submit" class="btn btn-secondary mt-3 mb-4">Get Started For Free</button>
+              </div>
+              
+      
+              <div class="form-popup text-center" id="land_form">
+              <form action="#" method="post" autocomplete="off">
+                  <div class="form-group">
+                    <label for="Email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted"><strong>We'll never share your email with anyone else.</strong></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" id="password1" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-secondary" id="submit" onclick="validate()">Submit</button>
+              </form>
+              </div>
         </div>
-        <h1 class="text-uppercase mb-2 text-white">Start Learning English</h1>
-        <h2 class="font-weight-light mb-2 text-white">Certificate Your Knowledge For Free</h2>
-        <button type="submit" class="btn btn-secondary">Get Started For Free</button>
-
-        <div class="form-popup" id="myForm" id="land_form">
-        <form>
-            <div class="form-group">
-              <label for="Email">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="Password">Password</label>
-              <input type="password" class="form-control" id="password1" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-secondary" id="submit" onclick="validate()">Submit</button>
-        </form>
-        </div>
+      </div>
+        
     </div>
 </body>
 </html>

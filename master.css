@@ -79,6 +79,7 @@ header div {
 .page-footer p {
   color: #fff;
   font-style: italic;
+  text-align: center;
 }
 
 .page-footer a {
@@ -108,40 +109,93 @@ header div {
 /* LANDING PAGE */
 
 #land {
-  background: url(img/landingPageBackground.png);
+  background: url(img/land.jpg);
   background-repeat: no-repeat;
-  background-size: 100%; 
+  background-size: cover;
   height: 100vh;
 }
 
+#logo_land {
+  width: 20%;
+}
+
 #land h1 {
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 2.3em;
+  font-weight: 700;
+  color:#243665!important;
 }
 
 #land h2 {
-  font-size: 1.5rem;
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: 600!important;
+  color:#8BD8BD!important;
+  text-decoration: underline;
+}
+
+#land strong {
+  color:#555;
   font-style: italic;
 }
 
-#logo {
-  opacity: 0.7!important;
-  width: 10%;
+#land input {
+  text-align: center;
+  margin: auto;
+  width: 30%;
+}
+
+#land label {
+  font-weight: 600; 
+}
+
+@media only screen and (max-width: 1200px) {
+  #logo_land {
+    width: 30%!important;
+  }
+
+  #land h1 {
+    font-size: 2em;
+  }
+
+  #land h2 {
+    font-size: 1em;
+  }
+
+  #land label {
+    font-size: 0.8em; 
+  }
+
+  #land input {
+    width: 40%;
+  }
+
+  #land input::placeholder {
+    font-size: 0.8em; 
+  }
+  
 }
 
 @media only screen and (max-width: 700px) {
-  #logo {
-    width: 25%!important;
+  #logo_land {
+    width: 40%!important;
+  }
+
+  #land h1 {
+    font-size: 1.5em;
+  }
+
+  #land h2 {
+    font-size: 0.7em;
+  }
+
+  #land input {
+    width: 50%;
   }
 }
 
-#free {
-  font-size: 2.3rem;
-  font-family: "Montserrat";
-  color:#fff;
-  font-style: italic;
-  font-weight: 500;
-}
+
+
+
 
 /* HOME PAGE */
 
@@ -168,6 +222,7 @@ header div {
   font-size: 1.3em!important;
   font-style: italic;
   color:#fff;
+  text-align: center;
 }
 
 .carousel-item span {
