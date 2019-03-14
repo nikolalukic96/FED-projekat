@@ -302,6 +302,10 @@ p {
   color: #555;
   font-weight: 300;
 }
+.img-thumbnail{
+    margin-top: 10vh;
+    margin-left: 4vw;
+}
 
 /* ABOUT US PAGE */
 
