@@ -322,3 +322,12 @@ p {
   font-size: 0.9rem;
 }
 
+#cont {
+  background-image: url("img/contactbg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#conth {
+  color: #fff;
+}
