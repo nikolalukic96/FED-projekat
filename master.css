@@ -139,12 +139,11 @@ header div {
 
 #land strong {
 	color: #555;
+	font-size: 1em!important;
 	font-style: italic;
 }
 
 #land input {
-	text-align: center;
-	margin: auto;
 	width: 30%;
 }
 
@@ -176,6 +175,10 @@ header div {
 	#land input::placeholder {
 		font-size: 0.8em;
 	}
+
+	#land button {
+		font-size: 0.8em;
+	}
 }
 
 @media only screen and (max-width: 700px) {
@@ -184,15 +187,15 @@ header div {
 	}
 
 	#land h1 {
-		font-size: 1.5em;
+		font-size: 1.4em;
 	}
 
 	#land h2 {
-		font-size: 0.7em;
+		font-size: 0.8em;
 	}
 
 	#land input {
-		width: 50%;
+		width: 70%;
 	}
 }
 
