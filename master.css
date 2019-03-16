@@ -614,15 +614,28 @@ textarea {
 }
 
 #cont {
-	background-image: url("img/contactbg.png");
+	background-image: url("img/contact.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 #conth {
-	color: #fff;
+	color: #8bd8bd;
 }
 
 .mb-6 {
 	margin-bottom: 250px;
 }
+
+.bg-img {
+	background-image: url("img/contactbg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+#contact {
+	padding: 100px;
+}
+  
