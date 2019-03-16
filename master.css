@@ -19,6 +19,17 @@ h6 {
 	font-family: "Montserrat";
 }
 
+button {
+	background: #222!important;
+	box-shadow: 3px 3px 3px #000;
+	opacity: 0.9;
+	border: none!important;
+}
+
+button:hover {
+	opacity: 1;
+}
+
 /* TEMA (header,footer) */
 
 /* header */
@@ -610,4 +621,8 @@ textarea {
 
 #conth {
 	color: #fff;
+}
+
+.mb-6 {
+	margin-bottom: 250px;
 }
