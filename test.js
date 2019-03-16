@@ -13,73 +13,73 @@ const scoreDiv = document.getElementById('scoreContainer');
 //Kreiram pitanja, array sa objektima, u svakom objektu je pitanje,izbor A,B,C i tacan odgovor
 let questions = [
 	{
-		question: 'Koliko je 1+1?',
-		choiceA: '0',
-		choiceB: '2',
-		choiceC: '3',
+		question: 'The monsters, and the dark forest they live in, __.',
+		choiceA: 'are scare',
+		choiceB: 'are scary',
+		choiceC: 'is scary',
 		correct: 'B'
 	},
 	{
-		question: 'Koliko je 2+2?',
-		choiceA: '4',
-		choiceB: '9',
-		choiceC: '0',
+		question: 'Did you go to the movies __?',
+		choiceA: 'today',
+		choiceB: 'tomorrow',
+		choiceC: 'now',
 		correct: 'A'
 	},
 	{
-		question: 'Koliko je 3+3?',
-		choiceA: '8',
-		choiceB: '7',
-		choiceC: '6',
+		question: 'Either place you decide to visit __ for its own reasons.',
+		choiceA: 'are good',
+		choiceB: 'are gooder',
+		choiceC: 'is good',
 		correct: 'C'
 	},
 	{
-		question: 'Koliko je 4+4?',
-		choiceA: '7',
-		choiceB: '8',
-		choiceC: '6',
+		question: '___ there a restaurant near here?',
+		choiceA: 'Do',
+		choiceB: 'Is',
+		choiceC: 'Have',
 		correct: 'B'
 	},
 	{
-		question: 'Koliko je 5+5?',
-		choiceA: '10',
-		choiceB: '11',
-		choiceC: '12',
+		question: 'Look! The bus ___.',
+		choiceA: 'is leaving',
+		choiceB: 'leaves',
+		choiceC: 'leaving',
 		correct: 'A'
 	},
 	{
-		question: 'Koliko je 6+6?',
-		choiceA: '7',
-		choiceB: '12',
-		choiceC: '20',
+		question: 'Dubai has ___ building in the world.',
+		choiceA: 'tall',
+		choiceB: 'the tallest',
+		choiceC: 'bigger',
 		correct: 'B'
 	},
 	{
-		question: 'Koliko je 7+7?',
-		choiceA: '7',
-		choiceB: '8',
-		choiceC: '14',
+		question: 'Everybody __ what is happening at the concert hall tonight.',
+		choiceA: 'knowed',
+		choiceB: 'knewed',
+		choiceC: 'know',
 		correct: 'C'
 	},
 	{
-		question: 'Koliko je 8+8?',
-		choiceA: '16',
-		choiceB: '8',
-		choiceC: '6',
+		question: 'We ___ to go today.',
+		choiceA: 'are planning',
+		choiceB: 'is planning',
+		choiceC: 'are planned',
 		correct: 'A'
 	},
 	{
-		question: 'Koliko je 9+9?',
-		choiceA: '18',
-		choiceB: '8',
-		choiceC: '6',
+		question: 'I ___ to Chicago last summer.',
+		choiceA: 'went',
+		choiceB: 'had been',
+		choiceC: 'has been',
 		correct: 'A'
 	},
 	{
-		question: 'Koliko je 10+10?',
-		choiceA: '7',
-		choiceB: '8',
-		choiceC: '20',
+		question: `I didn't _____ TV last night.`,
+		choiceA: 'not watched',
+		choiceB: 'watched',
+		choiceC: 'watch',
 		correct: 'C'
 	}
 ];
@@ -87,9 +87,9 @@ let questions = [
 const lastQuestion = questions.length - 1; //question.lenght je zato sto array uvek krece od nule a ne od 1
 let runningQuestion = 0;
 let count = 0;
-const questionTime = 10; // // 10 sekundi da se odgovori na pitanje
+const questionTime = 20; // // 20 sekundi da se odgovori na pitanje
 const gaugeWidth = 150; //duzina bara u px
-const gaugeUnit = gaugeWidth / questionTime; // Ovo deli sirinu bara sa vremenom koje smo zadali (u ovom slucaj 150/10)
+const gaugeUnit = gaugeWidth / questionTime; // Ovo deli sirinu bara sa vremenom koje smo zadali (u ovom slucaj 150/20)
 let TIMER;
 let score = 0;
 
@@ -112,7 +112,7 @@ function startTest() {
 	test.style.display = 'block'; //prikazuje test, u html je prethodno stavljen display:none
 	renderProgress();
 	renderCounter();
-	TIMER = setInterval(renderCounter, 1000); // 1000ms = 1s
+	TIMER = setInterval(renderCounter, 1000);
 }
 
 // Renderuje progres bar, kreira div sa klasom prog odnosno kreira one male kruzice za svako pitanje u testu
@@ -168,7 +168,7 @@ function checkAnswer(answer) {
 
 //Ovo ce da boji kruzic u zeleno ako je odgovor tacan
 function answerIsCorrect() {
-	document.getElementById(runningQuestion).style.backgroundColor = '#0f0';
+	document.getElementById(runningQuestion).style.backgroundColor = 'mediumseagreen';
 }
 
 //Ovo ce da boji kruzic u crveno ako je odgovor netacan
@@ -179,12 +179,12 @@ function answerIsWrong() {
 //Prikazivanje rezultata
 function scoreRender() {
 	scoreDiv.style.display = 'block';
-
+	test.style.display = 'none';
 	// Pretvara rezultat testa u procente
 	const scorePerCent = Math.round(100 * score / questions.length);
 
-	scoreDiv.innerHTML += '<h3>Tacnih odgovora: ' + score + '</h3>';
-	scoreDiv.innerHTML += '<p>Imali ste ' + scorePerCent + '% na testu</p>';
+	scoreDiv.innerHTML += '<h2>Correct answers: ' + score + '</h2>';
+	scoreDiv.innerHTML += '<h4>You had ' + scorePerCent + '% score on this test.</h4>';
 }
 function resetPage() {
 	location.reload();

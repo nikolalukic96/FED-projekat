@@ -49,6 +49,34 @@
 
     <main>
         <!--Ovde bi Dragan trebao da ubaci test-->
+        <div id="container">
+          <a href="#" id="start">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Start Test!
+          </a>
+            <div id="test" style="display: none">
+              <div id="question"></div>
+              <div id="choices">
+                  <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                  <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                  <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+              </div>
+              <div id="timer">
+                  <div id="counter"></div>
+                  <div id="btimeGauge"></div>
+                  <div id="timeGauge"></div>
+              </div>
+              <div id="progress"></div>
+          </div>
+          <div id="scoreContainer"></div>
+        </div>
+        <div id="reset-test" class="mt-4">
+            <button onclick="resetPage()" class="btn btn-dark pt-2 pb-2 pl-5 pr-5">Reset Test</button>
+        </div>
     </main>
     
 
@@ -93,5 +121,6 @@
             </div>
         </div>
     </footer>
+    <script src="test.js"></script>
 </body>
 </html>
