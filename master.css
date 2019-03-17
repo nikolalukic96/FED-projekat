@@ -20,10 +20,10 @@ h6 {
 }
 
 button {
-	background: #222!important;
+	background: #222 !important;
 	box-shadow: 3px 3px 3px #000;
 	opacity: 0.9;
-	border: none!important;
+	border: none !important;
 }
 
 button:hover {
@@ -150,7 +150,7 @@ header div {
 
 #land strong {
 	color: #555;
-	font-size: 1em!important;
+	font-size: 1em !important;
 	font-style: italic;
 }
 
@@ -596,6 +596,53 @@ p {
 
 /* ABOUT US PAGE */
 
+/* Social media */
+.social-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icons {
+	list-style: none;
+}
+.icons li {
+	display: inline-block;
+	margin: 0.15em;
+	position: relative;
+	font-size: 1.2em;
+}
+.icons i {
+	color: #fff;
+	position: absolute;
+	top: 21px;
+	left: 21px;
+	transition: all 0.5s ease-out;
+}
+.icons {
+	display: inline-block;
+}
+.icons a:before {
+	transform: scale(1);
+	content: '';
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	display: block;
+	background: linear-gradient(to right, #243665, #8bd8bd);
+	transition: all 0.5s ease-in;
+}
+.icons a:hover:before {
+	transform: scale(0);
+	transition: all 0.5s ease-in;
+}
+.icons a:hover i {
+	transform: scale(2.2);
+	color: #243665;
+	background: linear-gradient(to right, #243665, #8bd8bd);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: all 0.5s ease-in;
+}
 /* CONTACT PAGE */
 
 .form-group input,
@@ -638,4 +685,3 @@ textarea {
 #contact {
 	padding: 100px;
 }
-  
