@@ -19,17 +19,6 @@ h6 {
 	font-family: "Montserrat";
 }
 
-button {
-	background: #222 !important;
-	box-shadow: 3px 3px 3px #000;
-	opacity: 0.9;
-	border: none !important;
-}
-
-button:hover {
-	opacity: 1;
-}
-
 /* TEMA (header,footer) */
 
 /* header */
@@ -57,6 +46,12 @@ header div {
 
 #logo {
 	width: 13% !important;
+}
+
+@media only screen and (max-width: 700px) {
+	#logo {
+		width: 25%!important;
+	}
 }
 
 #nav {
@@ -555,23 +550,29 @@ div.desc {
 	position: absolute;
 	display: none;
 }
+
 #scoreContainer h2 {
 	margin-top: 150px;
 	color: white;
 }
+
 #scoreContainer h4 {
 	color: white;
 }
+
 @media only screen and (max-width: 700px) {
 	#progress {
 		width: 55%;
 	}
 }
+
 #reset-test {
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 }
+
+
 /* LINKS PAGE */
 
 a {
@@ -643,6 +644,8 @@ p {
 	-webkit-text-fill-color: transparent;
 	transition: all 0.5s ease-in;
 }
+
+
 /* CONTACT PAGE */
 
 .form-group input,
@@ -660,16 +663,6 @@ textarea {
 	font-size: 0.9rem;
 }
 
-#cont {
-	background-image: url("img/contact.png");
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-#conth {
-	color: #8bd8bd;
-}
-
 .mb-6 {
 	margin-bottom: 250px;
 }
@@ -680,8 +673,52 @@ textarea {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	margin: -80px 0 -55px 0;
+	padding-top: 50px;
+}
+
+.bg-img h3,h2 {
+	color:#fff;
+}
+
+.bg-img p {
+	color:#fff;
+	text-align: left!important;
+}
+
+.bg-img a {
+	color:#8bd8bd;
+}
+
+.bg-img u {
+	color:#8bd8bd;
+}
+
+.bg-img em {
+	color:#fff;
+	font-size: 0.8em!important;
 }
 
 #contact {
 	padding: 100px;
+}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0))!important;
+}
+
+@media only screen and (max-width: 1300px) {
+	.bg-img p {
+		font-size: 0.8em;
+	}
+
+	.bg-img u {
+		font-size: 1em;
+	}
+
+	.bg-img a {
+		font-size: 1em;
+	}
 }
