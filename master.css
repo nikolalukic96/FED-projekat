@@ -85,12 +85,14 @@ header div {
 
 .page-footer {
 	background: #222 !important;
+	padding: 50px!important;
 }
 
 .page-footer p {
 	color: #fff;
 	font-style: italic;
 	text-align: center;
+	font-size: 0.9em;
 }
 
 .page-footer a {
@@ -122,7 +124,9 @@ header div {
 	background: url(img/land.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 50% 50%;
 	height: 100vh;
+
 }
 
 #logo_land {
@@ -138,9 +142,8 @@ header div {
 #land h2 {
 	font-size: 1.3em;
 	font-style: italic;
-	font-weight: 600 !important;
+	font-weight: 400 !important;
 	color: #8bd8bd !important;
-	text-decoration: underline;
 }
 
 #land strong {
@@ -699,10 +702,6 @@ textarea {
 	font-size: 0.8em!important;
 }
 
-#contact {
-	padding: 100px;
-}
-
 hr.style-two {
     border: 0;
     height: 1px;
@@ -721,4 +720,28 @@ hr.style-two {
 	.bg-img a {
 		font-size: 1em;
 	}
+}
+
+@media only screen and (max-width: 700px) {
+	.img_h {
+		padding-bottom: 30px;
+	}
+}
+
+
+.img_h:hover img {
+	border: 5px solid #e5e5e5;
+	border-radius: 50px;
+	transition-duration: 0.2s;
+}
+
+.contact_info p {
+	font-size: 0.8em;
+}
+
+.contact_info a {
+	font-size: 0.8em;
+	color:#fff;
+	text-decoration: underline;
+	font-weight: 300;
 }
