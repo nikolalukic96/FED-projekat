@@ -538,7 +538,7 @@ div.desc {
 .prog {
 	width: 25px;
 	height: 25px;
-	border: 1px solid #000;
+	border: 1px solid white;
 	display: inline-block;
 	border-radius: 50%;
 	margin-left: 5px;
