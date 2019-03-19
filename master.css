@@ -253,6 +253,7 @@ em {
 
 .carousel-item button {
 	font-size: 1.3em !important;
+	margin-top: 50px;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -285,6 +286,63 @@ em {
 
 	.carousel-item button {
 		font-size: 1em !important;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.carousel-item h5 {
+		font-size: 1.3em !important;
+		padding-top: 250px!important;
+	}
+
+	.carousel-item p,
+	strong,
+	em {
+		font-size: 0.8em !important;
+	}
+
+	.carousel-item span {
+		font-size: 1em !important;
+	}
+
+	.carousel-item a {
+		font-size: 1em !important;
+	}
+
+	.carousel-item button {
+		font-size: 0.7em !important;
+		padding: 8px 15px!important;
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.carousel-item h5 {
+		font-size: 1em !important;
+		padding-top: 350px!important;
+		margin-bottom: 10px;
+	}
+
+	.carousel-item p,
+	strong,
+	em {
+		font-size: 0.6em !important;
+		margin-bottom: 0;
+	}
+
+	.carousel-item span {
+		font-size: 0.6em !important;
+	}
+
+	.carousel-item a {
+		font-size: 0.8em !important;
+	}
+
+	.carousel-item button {
+		font-size: 0.5em !important;
+		padding: 8px 15px!important;
+		margin-top: 10px;
+		margin-bottom: 0;
 	}
 }
 
