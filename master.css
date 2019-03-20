@@ -715,6 +715,7 @@ div.desc {
 #links a {
 	color: #8bd8bd;
 	font-weight: 700;
+	text-decoration: underline;
 }
 
 #links h5 {
