@@ -238,11 +238,11 @@ header div {
 
 /* HOME PAGE */
 
-#home .bd-example {
+.bd-example {
 	margin-top: -80px;
 }
 
-#home .carousel-caption {
+.carousel-caption {
 	background: rgba(0, 0, 0, 0.5) !important;
 	border-radius: 5px;
 	position: absolute;
@@ -251,13 +251,13 @@ header div {
 	transform: translateY(50%);
 }
 
-#home .carousel-item h5 {
+.carousel-item h5 {
 	font-size: 2.5em !important;
 	margin-bottom: 30px;
 	color: #fff;
 }
 
-#home .carousel-item p,
+.carousel-item p,
 strong,
 em {
 	font-size: 1.3em !important;
@@ -266,32 +266,32 @@ em {
 	text-align: center;
 }
 
-#home .carousel-item span {
+.carousel-item span {
 	font-size: 1.7em !important;
 	color: #fff;
 	font-weight: 600;
 }
 
-#home .carousel-item a {
+.carousel-item a {
 	color: #fff;
 	text-decoration: underline;
 	font-weight: 400;
 	font-size: 1em !important;
 }
 
-#home .carousel-item button {
+.carousel-item button {
 	font-size: 1.3em !important;
 	margin-top: 50px;
 }
 
 @media only screen and (max-width: 1400px) {
-	#home .carousel-item h5 {
+	.carousel-item h5 {
 		font-size: 1.7em !important;
 		margin-bottom: 30px;
 		color: #fff;
 	}
 
-	#home .carousel-item p,
+	.carousel-item p,
 	strong,
 	em {
 		font-size: 1em !important;
@@ -299,45 +299,45 @@ em {
 		color: #fff;
 	}
 
-	#home .carousel-item span {
+	.carousel-item span {
 		font-size: 1.2em !important;
 		color: #fff;
 		font-weight: 600;
 	}
 
-	#home .carousel-item a {
+	.carousel-item a {
 		color: #fff;
 		text-decoration: underline;
 		font-weight: 400;
 		font-size: 0.8em !important;
 	}
 
-	#home .carousel-item button {
+	.carousel-item button {
 		font-size: 1em !important;
 	}
 }
 
 @media only screen and (max-width: 700px) {
-	#home .carousel-item h5 {
+	.carousel-item h5 {
 		font-size: 1.3em !important;
 		padding-top: 250px!important;
 	}
 
-	#home .carousel-item p,
+	.carousel-item p,
 	strong,
 	em {
 		font-size: 0.8em !important;
 	}
 
-	#home .carousel-item span {
+	.carousel-item span {
 		font-size: 1em !important;
 	}
 
-	#home .carousel-item a {
+	.carousel-item a {
 		font-size: 1em !important;
 	}
 
-	#home .carousel-item button {
+	.carousel-item button {
 		font-size: 0.7em !important;
 		padding: 8px 15px!important;
 		margin-top: 20px;
@@ -346,28 +346,28 @@ em {
 
 
 @media only screen and (max-width: 500px) {
-	#home .carousel-item h5 {
+	.carousel-item h5 {
 		font-size: 1em !important;
 		padding-top: 350px!important;
 		margin-bottom: 10px;
 	}
 
-	#home .carousel-item p,
+	.carousel-item p,
 	strong,
 	em {
 		font-size: 0.6em !important;
 		margin-bottom: 0;
 	}
 
-	#home .carousel-item span {
+	.carousel-item span {
 		font-size: 0.6em !important;
 	}
 
-	#home .carousel-item a {
+	.carousel-item a {
 		font-size: 0.8em !important;
 	}
 
-	#home .carousel-item button {
+	.carousel-item button {
 		font-size: 0.5em !important;
 		padding: 8px 15px!important;
 		margin-top: 10px;
@@ -378,7 +378,7 @@ em {
 .home_h2 {
 	color:#555;
 	font-size: 1.5em;
-	margin: 0% 0% 3% 1%;
+	margin: 0% 0% 2% 1%;
 	text-align: center;
 }
 
