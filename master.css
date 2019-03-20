@@ -351,9 +351,19 @@ em {
 	}
 }
 
-#home h3,
-p {
-	color: #fff;
+.home_h2 {
+	color:#555;
+	font-size: 1.5em;
+	margin: 0% 0% 3% 1%;
+	text-align: center;
+}
+
+.home_iframe iframe {
+	border: 15px solid #8bd8bd;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px #222;
+	width: 70%;
+	height: 500px;
 }
 
 .welcome h3 {
@@ -397,16 +407,30 @@ div.desc {
 	width: 24.99999%;
 }
 
+@media only screen and (max-width: 1000px) {
+	.home_iframe iframe {
+		height: 300px;
+	}
+}
+
 @media only screen and (max-width: 700px) {
 	.responsive {
 		width: 49.99999%;
 		margin: 6px 0;
+	}
+
+	.home_iframe iframe {
+		height: 300px;
 	}
 }
 
 @media only screen and (max-width: 500px) {
 	.responsive {
 		width: 100%;
+	}
+
+	.home_iframe iframe {
+		height: 200px;
 	}
 }
 
