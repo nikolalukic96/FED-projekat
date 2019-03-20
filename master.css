@@ -48,6 +48,15 @@ header div {
 	width: 13% !important;
 }
 
+.saradnici div {
+	display: flex;
+	justify-content: center; 
+}
+section h3{
+	display: flex;
+	justify-content: center;
+	padding: 3vh;
+}
 @media only screen and (max-width: 700px) {
 	#logo {
 		width: 25%!important;
@@ -320,6 +329,7 @@ em {
 		margin-top: 20px;
 	}
 }
+
 
 @media only screen and (max-width: 500px) {
 	.carousel-item h5 {
