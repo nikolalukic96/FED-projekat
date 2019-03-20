@@ -471,7 +471,7 @@ div.desc {
 
 /* TEST PAGE */
 
-#test {
+#test_bg {
 	background: url(img/bricks-bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
