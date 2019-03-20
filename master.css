@@ -48,15 +48,29 @@ header div {
 	width: 13% !important;
 }
 
+.saradnici {
+	background: #333;
+	padding: 15px;
+	border-radius: 5px;
+}
+
 .saradnici div {
 	display: flex;
-	justify-content: center; 
-}
-section h3{
-	display: flex;
 	justify-content: center;
-	padding: 3vh;
 }
+
+.saradnici img {
+	opacity: 0.7;
+}
+
+.saradnici img:hover {
+	opacity: 1!important;
+}
+
+.saradnici img {
+	width: 80%;
+}
+
 @media only screen and (max-width: 700px) {
 	#logo {
 		width: 25%!important;
@@ -224,11 +238,11 @@ section h3{
 
 /* HOME PAGE */
 
-.bd-example {
+#home .bd-example {
 	margin-top: -80px;
 }
 
-.carousel-caption {
+#home .carousel-caption {
 	background: rgba(0, 0, 0, 0.5) !important;
 	border-radius: 5px;
 	position: absolute;
@@ -237,13 +251,13 @@ section h3{
 	transform: translateY(50%);
 }
 
-.carousel-item h5 {
+#home .carousel-item h5 {
 	font-size: 2.5em !important;
 	margin-bottom: 30px;
 	color: #fff;
 }
 
-.carousel-item p,
+#home .carousel-item p,
 strong,
 em {
 	font-size: 1.3em !important;
@@ -252,32 +266,32 @@ em {
 	text-align: center;
 }
 
-.carousel-item span {
+#home .carousel-item span {
 	font-size: 1.7em !important;
 	color: #fff;
 	font-weight: 600;
 }
 
-.carousel-item a {
+#home .carousel-item a {
 	color: #fff;
 	text-decoration: underline;
 	font-weight: 400;
 	font-size: 1em !important;
 }
 
-.carousel-item button {
+#home .carousel-item button {
 	font-size: 1.3em !important;
 	margin-top: 50px;
 }
 
 @media only screen and (max-width: 1400px) {
-	.carousel-item h5 {
+	#home .carousel-item h5 {
 		font-size: 1.7em !important;
 		margin-bottom: 30px;
 		color: #fff;
 	}
 
-	.carousel-item p,
+	#home .carousel-item p,
 	strong,
 	em {
 		font-size: 1em !important;
@@ -285,45 +299,45 @@ em {
 		color: #fff;
 	}
 
-	.carousel-item span {
+	#home .carousel-item span {
 		font-size: 1.2em !important;
 		color: #fff;
 		font-weight: 600;
 	}
 
-	.carousel-item a {
+	#home .carousel-item a {
 		color: #fff;
 		text-decoration: underline;
 		font-weight: 400;
 		font-size: 0.8em !important;
 	}
 
-	.carousel-item button {
+	#home .carousel-item button {
 		font-size: 1em !important;
 	}
 }
 
 @media only screen and (max-width: 700px) {
-	.carousel-item h5 {
+	#home .carousel-item h5 {
 		font-size: 1.3em !important;
 		padding-top: 250px!important;
 	}
 
-	.carousel-item p,
+	#home .carousel-item p,
 	strong,
 	em {
 		font-size: 0.8em !important;
 	}
 
-	.carousel-item span {
+	#home .carousel-item span {
 		font-size: 1em !important;
 	}
 
-	.carousel-item a {
+	#home .carousel-item a {
 		font-size: 1em !important;
 	}
 
-	.carousel-item button {
+	#home .carousel-item button {
 		font-size: 0.7em !important;
 		padding: 8px 15px!important;
 		margin-top: 20px;
@@ -332,28 +346,28 @@ em {
 
 
 @media only screen and (max-width: 500px) {
-	.carousel-item h5 {
+	#home .carousel-item h5 {
 		font-size: 1em !important;
 		padding-top: 350px!important;
 		margin-bottom: 10px;
 	}
 
-	.carousel-item p,
+	#home .carousel-item p,
 	strong,
 	em {
 		font-size: 0.6em !important;
 		margin-bottom: 0;
 	}
 
-	.carousel-item span {
+	#home .carousel-item span {
 		font-size: 0.6em !important;
 	}
 
-	.carousel-item a {
+	#home .carousel-item a {
 		font-size: 0.8em !important;
 	}
 
-	.carousel-item button {
+	#home .carousel-item button {
 		font-size: 0.5em !important;
 		padding: 8px 15px!important;
 		margin-top: 10px;
@@ -696,6 +710,53 @@ p {
 }
 
 /* ABOUT US PAGE */
+
+.about_img {
+	padding-bottom: 2vh; 
+	display: flex; 
+	justify-content: space-around;
+}
+
+.about_img img {
+	border-radius: 20%;
+	border: 10px solid #8bd8bd;
+	opacity: 0.8;
+}
+
+.about_img img:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+.about h3 {
+	font-size: 1.5em;
+	color: #555;
+}
+
+section h3 {
+	font-size: 1.2em;
+	color: #555;
+}
+
+.about li {
+	padding-top: 10px;
+}
+
+.about .lead {
+	color:#243665;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.about dt {
+	color:#8bd8bd;
+	font-weight: 400;
+}
+
+.about dd {
+	font-size: 0.9em;
+	font-style: italic;
+}
 
 /* Social media */
 .social-container {
