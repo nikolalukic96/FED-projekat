@@ -148,7 +148,7 @@ header div {
 
 /* LANDING PAGE */
 
-#land {
+#land_bg {
 	background: url(img/land.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -240,6 +240,11 @@ header div {
 
 .bd-example {
 	margin-top: -80px;
+}
+
+.width {
+	width: 85%;
+	margin: 0 auto;
 }
 
 .carousel-caption {
@@ -465,6 +470,13 @@ div.desc {
 }
 
 /* TEST PAGE */
+
+#test {
+	background: url(img/bricks-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 #container {
 	margin: 0 auto;
 	height: 400px;
@@ -689,27 +701,49 @@ div.desc {
 
 /* LINKS PAGE */
 
-a {
-	color: #243665;
-	font-weight: 400;
+#links_bg {
+	background: url(img/linksbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-a:hover {
+#links p {
+	color:#fff;
+	padding-right: 30px;
+}
+
+#links a {
+	color: #8bd8bd;
 	font-weight: 700;
-	text-decoration: underline;
 }
 
-p {
-	text-align: justify;
-	color: #555;
-	font-weight: 300;
+#links h5 {
+	font-size: 1.5em;
+	margin-bottom: 20px;
+	color:#fff;
 }
+
+#links li {
+	padding-top: 10px;
+}
+
+#links li p {
+	font-style: italic;
+	font-size: 0.95em;
+}
+
 .img-thumbnail {
-	margin-top: 10vh;
-	margin-left: 4vw;
+	opacity: 0.9;
 }
 
 /* ABOUT US PAGE */
+
+#about_bg {
+	background: url(img/aboutus.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+}
 
 .about_img {
 	padding-bottom: 2vh; 
@@ -719,8 +753,9 @@ p {
 
 .about_img img {
 	border-radius: 20%;
-	border: 10px solid #8bd8bd;
+	border: 10px solid #555;
 	opacity: 0.8;
+	margin-bottom: 5vh;
 }
 
 .about_img img:hover {
@@ -730,12 +765,10 @@ p {
 
 .about h3 {
 	font-size: 1.5em;
-	color: #555;
 }
 
 section h3 {
 	font-size: 1.2em;
-	color: #555;
 }
 
 .about li {
@@ -749,7 +782,7 @@ section h3 {
 }
 
 .about dt {
-	color:#8bd8bd;
+	color:#fff;
 	font-weight: 400;
 }
 
@@ -827,34 +860,32 @@ textarea {
 	margin-bottom: 250px;
 }
 
-.bg-img {
+#cont {
 	background-image: url("img/contactbg.png");
-	background-position: center;
+	background-position: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
-	margin: -80px 0 -55px 0;
-	padding-top: 50px;
+	
 }
 
-.bg-img h3,h2 {
+.con h3,h2 {
 	color:#fff;
 }
 
-.bg-img p {
+.con p {
 	color:#fff;
 	text-align: left!important;
 }
 
-.bg-img a {
+.con a {
 	color:#8bd8bd;
 }
 
-.bg-img u {
+.con u {
 	color:#8bd8bd;
 }
 
-.bg-img em {
+.con em {
 	color:#fff;
 	font-size: 0.8em!important;
 }
@@ -866,15 +897,15 @@ hr.style-two {
 }
 
 @media only screen and (max-width: 1300px) {
-	.bg-img p {
+	.con p {
 		font-size: 0.8em;
 	}
 
-	.bg-img u {
+	.con u {
 		font-size: 1em;
 	}
 
-	.bg-img a {
+	.con a {
 		font-size: 1em;
 	}
 }
