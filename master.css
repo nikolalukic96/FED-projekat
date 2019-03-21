@@ -21,15 +21,15 @@ h6 {
 
 .button {
 	background: #436780;
-	color:#fff;
-	box-shadow: 1px 1px 1px #ccc;
+	color:#8bd8bd;
+	box-shadow: 2px 2px 4px #ccc;
 	padding: 10px 20px;
 }
 
 .button2 {
 	background: #436780;
-	color:#fff;
-	box-shadow: 2px 2px 2px #000;
+	color:#8bd8bd;
+	box-shadow: 3px 3px 5px #000;
 	padding: 10px 20px;
 }
 
