@@ -168,7 +168,6 @@ header div {
 	background-size: cover;
 	background-position: 50% 50%;
 	height: 100vh;
-
 }
 
 #logo_land {
@@ -526,7 +525,9 @@ div.desc {
 	text-align: center;
 	background: linear-gradient(to right, #243665, #8bd8bd);
 }
+
 /* Animated button */
+
 #container a {
 	position: absolute;
 	top: 50%;
@@ -541,6 +542,7 @@ div.desc {
 	box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
 	overflow: hidden;
 }
+
 #container a::before {
 	content: '';
 	position: absolute;
@@ -550,6 +552,7 @@ div.desc {
 	width: 50%;
 	background: rgba(255, 255, 255, 0.05);
 }
+
 #container a span:nth-child(1) {
 	position: absolute;
 	top: 0;
@@ -559,6 +562,7 @@ div.desc {
 	background: linear-gradient(to right, #d5cfe4, #75acfa);
 	animation: animate1 2s linear infinite;
 }
+
 @keyframes animate1 {
 	0% {
 		transform: translateX(-100%);
@@ -567,6 +571,7 @@ div.desc {
 		transform: translateX(100%);
 	}
 }
+
 #container a span:nth-child(2) {
 	position: absolute;
 	top: 0;
@@ -577,6 +582,7 @@ div.desc {
 	animation: animate2 2s linear infinite;
 	animation-delay: 1s;
 }
+
 @keyframes animate2 {
 	0% {
 		transform: translateY(-100%);
@@ -585,6 +591,7 @@ div.desc {
 		transform: translateY(100%);
 	}
 }
+
 #container a span:nth-child(3) {
 	position: absolute;
 	bottom: 0;
@@ -594,6 +601,7 @@ div.desc {
 	background: linear-gradient(to left, #d5cfe4, #75acfa);
 	animation: animate3 2s linear infinite;
 }
+
 @keyframes animate3 {
 	0% {
 		transform: translateX(100%);
@@ -602,6 +610,7 @@ div.desc {
 		transform: translateX(-100%);
 	}
 }
+
 #container a span:nth-child(4) {
 	position: absolute;
 	top: 0;
@@ -612,6 +621,7 @@ div.desc {
 	animation: animate4 2s linear infinite;
 	animation-delay: 1s;
 }
+
 @keyframes animate4 {
 	0% {
 		transform: translateY(100%);
@@ -620,13 +630,16 @@ div.desc {
 		transform: translateY(-100%);
 	}
 }
+
 /*  */
+
 #question {
 	width: 100%;
 	height: 125px;
 	position: absolute;
 	text-align: center;
 }
+
 #question p {
 	padding: 15px;
 	font-size: 1.25em;
@@ -634,13 +647,16 @@ div.desc {
 	margin-top: 30px;
 	color: white;
 }
+
 /* Izbor odgovora */
+
 #choices {
 	width: 100%;
 	position: relative;
 	top: 125px;
 	padding-top: 20px;
 }
+
 .choice {
 	display: inline-block;
 	width: 200px;
@@ -654,11 +670,14 @@ div.desc {
 	margin-top: 10px;
 	color: white;
 }
+
 .choice:hover {
 	border: 2px solid white;
 	font-weight: bold;
 }
+
 /* Timer */
+
 #timer {
 	position: absolute;
 	height: 100px;
@@ -667,12 +686,16 @@ div.desc {
 	text-align: center;
 	margin-bottom: 10px;
 }
+
 /* Brojac */
+
 #counter {
 	font-size: 3em;
 	color: white;
 }
+
 /*  */
+
 #btimeGauge {
 	width: 150px;
 	height: 10px;
@@ -680,6 +703,7 @@ div.desc {
 	background-color: white;
 	margin-left: 25px;
 }
+
 #timeGauge {
 	height: 10px;
 	border-radius: 10px;
@@ -687,6 +711,7 @@ div.desc {
 	margin-top: -10px;
 	margin-left: 25px;
 }
+
 #progress {
 	width: 700px;
 	position: absolute;
@@ -695,6 +720,7 @@ div.desc {
 	padding: 5px;
 	text-align: right;
 }
+
 .prog {
 	width: 25px;
 	height: 25px;
@@ -704,7 +730,9 @@ div.desc {
 	margin-left: 5px;
 	margin-right: 5px;
 }
+
 /* Div Score */
+
 #scoreContainer {
 	background-color: linear-gradient(to right, #243665, #8bd8bd);
 	opacity: 0.9;
@@ -736,7 +764,6 @@ div.desc {
 	display: flex;
 	justify-content: center;
 }
-
 
 /* LINKS PAGE */
 
@@ -836,10 +863,12 @@ section h3 {
 }
 
 /* Social media */
+
 .social-container {
 	display: inline-block;
 	margin: auto!important;
 }
+
 .icons {
 	list-style: none;
 	padding-left: 0;
@@ -851,6 +880,7 @@ section h3 {
 	position: relative;
 	font-size: 1.2em;
 }
+
 .icons i {
 	color: #fff;
 	position: absolute;
@@ -869,10 +899,12 @@ section h3 {
 	background: linear-gradient(to right, #243665, #8bd8bd);
 	transition: all 0.5s ease-in;
 }
+
 .icons a:hover:before {
 	transform: scale(0);
 	transition: all 0.5s ease-in;
 }
+
 .icons a:hover i {
 	transform: scale(2.2);
 	color: #243665;
@@ -881,7 +913,6 @@ section h3 {
 	-webkit-text-fill-color: transparent;
 	transition: all 0.5s ease-in;
 }
-
 
 /* CONTACT PAGE */
 
@@ -961,7 +992,6 @@ hr.style-two {
 		padding-bottom: 30px;
 	}
 }
-
 
 .img_h:hover img {
 	border: 5px solid #e5e5e5;
