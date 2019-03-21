@@ -297,6 +297,10 @@ em {
 	font-size: 1em !important;
 }
 
+.carousel-item a:hover {
+	color: #8bd8bd;
+}
+
 .carousel-item button {
 	font-size: 1.3em !important;
 	margin-top: 50px;
@@ -370,7 +374,6 @@ em {
 		margin-top: 20px;
 	}
 }
-
 
 @media only screen and (max-width: 500px) {
 	.carousel-item h5 {
@@ -965,6 +968,7 @@ textarea {
 
 .con a {
 	color:#8bd8bd;
+	text-decoration: underline;
 }
 
 .con u {
@@ -974,6 +978,10 @@ textarea {
 .con em {
 	color:#fff;
 	font-size: 0.8em!important;
+}
+
+#submit {
+	text-decoration: none;
 }
 
 hr.style-two {
