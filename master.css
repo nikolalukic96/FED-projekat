@@ -327,11 +327,20 @@ em {
 		color: #fff;
 		text-decoration: underline;
 		font-weight: 400;
-		font-size: 0.8em !important;
+		font-size: 1em !important;
 	}
 
 	.carousel-item button {
 		font-size: 1em !important;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.carousel-item h5 {
+		padding-top: 200px!important;
+	}
+	.carousel-item button {
+		margin-top: 20px;
 	}
 }
 
