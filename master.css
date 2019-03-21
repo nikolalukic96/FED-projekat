@@ -420,11 +420,14 @@ em {
 	font-weight: 300;
 }
 
-div.gallery {
+div.gallery img {
 	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	border-radius: 3px !important;
 }
 
-div.gallery:hover {
+div.gallery img:hover {
 	opacity: 1;
 	border: none;
 	cursor: pointer;
@@ -433,10 +436,32 @@ div.gallery:hover {
 	transition-duration: 0.5s;
 }
 
-div.gallery img {
-	width: 100%;
-	height: auto;
-	border-radius: 3px !important;
+div.gallery p {
+	text-align: center;
+	padding: 20px 20px 0 20px;
+	font-style: italic;
+}
+
+@media only screen and (max-width: 1000px) {
+	div.gallery p {
+		font-size: 0.8em;
+	}
+	div.gallery a {
+		font-size: 1em;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	div.gallery p {
+		font-size: 1em;
+	}
+	div.gallery a {
+		font-size: 1.1em;
+	}
+}
+
+div.gallery a {
+	text-decoration: underline;
 }
 
 div.desc {
@@ -730,6 +755,10 @@ div.desc {
 	color: #8bd8bd;
 	font-weight: 700;
 	text-decoration: underline;
+}
+
+#links a:hover {
+	color:#436780;
 }
 
 #links h5 {
